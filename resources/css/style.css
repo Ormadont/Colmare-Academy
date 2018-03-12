@@ -39,3 +39,52 @@ nav a {
   text-decoration: none;
   color: black;
 }
+
+/* banner */
+
+.banner {
+  background-color: grey;
+  padding: 32px 24px;
+  display: flex;
+  align-items: center;
+}
+
+.sixty-left {
+  width: 60%;
+  padding-right: 24px;
+}
+
+.sixty-left img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.forty-right {
+  width:40%;
+}
+
+.invite {
+  padding-right:20%;
+}
+
+.forty-right h1 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.forty-right p {
+  margin: 24px 0;
+}
+
+.button {
+  width: 100%;
+  padding: 8px 0;
+  background-color: black;
+  text-align: center;
+}
+
+.button a {
+  text-decoration: none;
+  color: gray;
+}
