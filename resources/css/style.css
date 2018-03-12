@@ -1,8 +1,41 @@
+/* universal */
+
 body {
   background-color: brown;
 }
 
+/* header */
+
 header {
   display: flex;
   justify-content: space-between;
+  height: 64px;
+  background-color: white;
+}
+
+header div, header nav {
+  margin: 0 24px;
+}
+
+header img {
+  height: 2.5rem;
+}
+
+header, header .logo, header nav {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  text-transform: uppercase;
+}
+
+#academy {
+  color: lightgrey;
+}
+
+nav a {
+  margin-left: 16px;
+  text-decoration: none;
+  color: black;
 }
