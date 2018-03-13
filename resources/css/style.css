@@ -16,11 +16,11 @@ body {
   width:40%;
 }
 
-.container-img {
+.container-img, .container-video {
   padding: 32px 24px;
 }
 
-img {
+img, video {
   max-width: 100%;
   height: auto;
   display: block;
@@ -109,6 +109,7 @@ nav a {
 
 #information .forty-right {
   border-left: 1px solid lightgrey;
+  padding: 1rem 0;
 }
 
 .inf-mainText {
@@ -122,10 +123,6 @@ nav a {
 
 .inf-mainText .quote {
   padding: 1.5rem 0;
-}
-
-#information .forty-right {
-  padding: 1rem 0;
 }
 
 .vert-picText{
@@ -201,4 +198,34 @@ nav a {
 
 .blockText {
   padding: 1rem;
+}
+
+/* thesis */
+
+#thesis {
+  background-color: white;
+  display: flex;
+}
+
+h3#thesis {
+  font-weight: bold;
+  font-size: 2rem;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+#thesis .forty-right {
+  padding: 2rem 0;
+}
+
+#thesis .container-video {
+  padding-bottom: 1.5rem;
+}
+
+/* footer */
+footer {
+  background-color: whitesmoke;
+  border-top: 1px solid grey;
+  padding: 1rem 1.5rem;
+  margin-bottom: 2rem;
 }
