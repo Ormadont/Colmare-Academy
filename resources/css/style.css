@@ -1,7 +1,20 @@
 /* universal */
 
+html {
+  font-size: 16px;
+}
+
 body {
   background-color: brown;
+}
+
+.sixty-left {
+  width: 60%;
+  margin: 32px 24px;
+}
+
+.forty-right {
+  width:40%;
 }
 
 /* header */
@@ -42,39 +55,33 @@ nav a {
 
 /* banner */
 
+
 .banner {
-  background-color: grey;
-  padding: 32px 24px;
   display: flex;
   align-items: center;
+  background-color: grey;
 }
 
-.sixty-left {
-  width: 60%;
-  padding-right: 24px;
-}
-
-.sixty-left img {
+.banner img {
   max-width: 100%;
   height: auto;
   display: block;
 }
 
-.forty-right {
-  width:40%;
-}
+
 
 .invite {
   padding-right:20%;
 }
 
-.forty-right h1 {
-  font-size: 32px;
+.banner h1 {
+  font-size: 2rem;
   font-weight: bold;
 }
 
-.forty-right p {
-  margin: 24px 0;
+.banner p {
+  margin: 1.5rem 0;
+  font-size: 1.5rem;
 }
 
 .button {
@@ -87,4 +94,11 @@ nav a {
 .button a {
   text-decoration: none;
   color: gray;
+  font-size: 1.5rem;
+}
+
+/* information */
+
+.information {
+  background-color: white;
 }
