@@ -166,7 +166,7 @@ nav a {
 /* courses */
 #courses {
   background-color: whitesmoke;
-  padding: 2rem 4.5rem;
+  padding: 2rem 3.5rem;
 }
 
 #courses h3 {
@@ -176,10 +176,29 @@ nav a {
   padding-bottom: 2rem;
 }
 
-.grid {
-
+.linePics {
+  display: flex;
+  margin-bottom: 2rem;
 }
 
 .picText {
-  width: 33.33%;
+  flex: 1;
+  margin: 0 1rem;
+  padding-bottom: 0.5rem;
+  background-color: white;
+}
+
+#courses h5{
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+#courses h6 {
+  text-transform: uppercase;
+  margin: 8px 0;
+}
+
+.blockText {
+  padding: 1rem;
 }
