@@ -105,7 +105,10 @@ nav a {
 #information {
   background-color: white;
   display: flex;
-  padding-right: 2%;
+}
+
+#information .forty-right {
+  border-left: 1px solid lightgrey;
 }
 
 .inf-mainText {
@@ -122,12 +125,11 @@ nav a {
 }
 
 #information .forty-right {
-  margin-top: 32px;
-  margin-bottom: 32px;
+  padding: 1rem 0;
 }
 
 .vert-picText{
-  margin-bottom: 32px;
+  padding: 16px;
 }
 
 .container-sImg{
@@ -151,4 +153,12 @@ nav a {
 .text-block a {
   text-decoration: none;
   color: blue;
+}
+
+.guest {
+  background-color: lightgrey;
+}
+
+.campus {
+  border-top: 1px double lightgrey;
 }
