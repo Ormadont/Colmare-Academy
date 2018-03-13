@@ -5,7 +5,7 @@ html {
 }
 
 body {
-  background-color: brown;
+  background-color: whitesmoke;
 }
 
 .sixty-left {
@@ -225,7 +225,16 @@ h3#thesis {
 /* footer */
 footer {
   background-color: whitesmoke;
-  border-top: 1px solid grey;
+  color: lightgrey;
+  border-top: 1px solid lightgrey;
   padding: 1rem 1.5rem;
   margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer a {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: inherit;
 }
