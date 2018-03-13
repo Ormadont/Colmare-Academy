@@ -10,11 +10,25 @@ body {
 
 .sixty-left {
   width: 60%;
-  margin: 32px 24px;
 }
 
 .forty-right {
   width:40%;
+}
+
+.container-img {
+  padding: 32px 24px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+#banner, .vert-picText {
+  display: flex;
+  align-items: center;
 }
 
 /* header */
@@ -55,50 +69,86 @@ nav a {
 
 /* banner */
 
-
-.banner {
-  display: flex;
-  align-items: center;
-  background-color: grey;
+#banner {
+  background-color: lightgrey;
 }
-
-.banner img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-
 
 .invite {
   padding-right:20%;
 }
 
-.banner h1 {
+#banner h1 {
   font-size: 2rem;
   font-weight: bold;
 }
 
-.banner p {
+#banner p {
   margin: 1.5rem 0;
   font-size: 1.5rem;
 }
 
 .button {
   width: 100%;
-  padding: 8px 0;
+  padding: 0.5rem 0;
   background-color: black;
   text-align: center;
 }
 
 .button a {
   text-decoration: none;
-  color: gray;
+  color: lightgrey;
   font-size: 1.5rem;
 }
 
 /* information */
 
-.information {
+#information {
   background-color: white;
+  display: flex;
+  padding-right: 2%;
+}
+
+.inf-mainText {
+  padding: 0 1.5rem 2rem 1.5rem;
+}
+
+.inf-mainText h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.inf-mainText .quote {
+  padding: 1.5rem 0;
+}
+
+#information .forty-right {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.vert-picText{
+  margin-bottom: 32px;
+}
+
+.container-sImg{
+  margin-right: 16px;
+  width: 35%;
+}
+
+.text-block {
+  width: 65%;
+}
+
+.text-block h5{
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.text-block p {
+  margin: 8px 0;
+}
+
+.text-block a {
+  text-decoration: none;
+  color: blue;
 }
