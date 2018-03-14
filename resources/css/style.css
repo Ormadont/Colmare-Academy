@@ -48,7 +48,7 @@ header, header .logo, header nav {
 
 header {
   justify-content: space-between;
-  height: 64px;
+  height: 4rem;
   background-color: white;
 }
 
@@ -139,11 +139,6 @@ nav a {
   display: flex;
 }
 
-#information .forty-right {
-  border-left: 1px solid lightgrey;
-  padding: 1rem 0;
-}
-
 .inf-mainText {
   padding: 0 1.5rem 2rem 1.5rem;
 }
@@ -160,7 +155,7 @@ nav a {
 .vert-picText{
   display: flex;
   align-items: center;
-  padding: 16px;
+  padding: 1rem;
 }
 
 .container-sImg{
@@ -190,8 +185,43 @@ nav a {
   background-color: lightgrey;
 }
 
-.campus {
-  border-top: 1px double lightgrey;
+
+
+@media only screen and (min-width: 780px) {
+  #information .forty-right {
+    border-left: 1px solid lightgrey;
+    padding: 1rem 0;
+  }
+  .campus {
+    border-top: 1px double lightgrey;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  #information .forty-right, #information img, #information .text-block  {
+    width: 100%;
+  }
+  #information .vert-picText {
+    display: block;
+  }
+  #information .container-sImg {
+    width: auto;
+    margin: 0;
+  }
+
+  #information .text-block {
+    margin-top: 1rem;
+  }
+
+  .guest {
+    background-color: inherit;
+  }
+  #information {
+    /* display: none; */
+  }
+  #courses {
+    display: none;
+  }
 }
 
 /* courses */
