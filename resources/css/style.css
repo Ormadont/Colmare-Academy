@@ -316,7 +316,6 @@ h3#thesis {
 footer {
   background-color: whitesmoke;
   color: lightgrey;
-  border-top: 1px solid lightgrey;
   padding: 1rem 1.5rem;
   margin-bottom: 2rem;
   display: flex;
@@ -327,4 +326,18 @@ footer a {
   margin-left: 1rem;
   text-decoration: none;
   color: inherit;
+}
+
+@media only screen and (min-width: 780px) {
+  footer {
+    border-top: 1px solid lightgrey;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  footer {
+    background-color: inherit;
+    border-bottom: 0;
+    color: darkgrey;
+  }
 }
