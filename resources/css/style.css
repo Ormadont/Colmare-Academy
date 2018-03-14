@@ -216,12 +216,7 @@ nav a {
   .guest {
     background-color: inherit;
   }
-  #information {
-    /* display: none; */
-  }
-  #courses {
-    display: none;
-  }
+
 }
 
 /* courses */
@@ -237,22 +232,9 @@ nav a {
   padding-bottom: 2rem;
 }
 
-.linePics {
-  display: flex;
-  margin-bottom: 2rem;
-}
-
-.picText {
-  flex: 1;
-  margin: 0 1rem;
-  padding-bottom: 0.5rem;
-  background-color: white;
-}
-
 #courses h5{
   font-weight: bold;
   font-size: 1.1rem;
-  margin-bottom: 1rem;
 }
 
 #courses h6 {
@@ -262,6 +244,39 @@ nav a {
 
 .blockText {
   padding: 1rem;
+}
+
+@media only screen and (min-width: 780px) {
+
+  .picText {
+    flex: 1;
+    margin: 0 1rem;
+    padding-bottom: 0.5rem;
+    background-color: white;
+  }
+
+  .linePics {
+    display: flex;
+    margin-bottom: 2rem;
+  }
+  #courses h5{
+    margin-bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  #courses, .picText, .blockText {
+    padding: 0;
+    margin: 0;
+  }
+
+  #courses h5 {
+    display: block;
+    margin: 0.5rem 1rem;
+    padding: 1rem;
+    background: lightgrey;
+  }
+
 }
 
 /* thesis */
