@@ -36,15 +36,10 @@ img, video {
   #desktop {
     display: none;
   }
-}
 
-#banner, .vert-picText {
-  display: flex;
-  align-items: center;
 }
 
 /* header */
-
 
 header, header .logo, header nav {
   display: flex;
@@ -85,14 +80,11 @@ nav a {
     justify-content: space-around;
   }
 }
+
 /* banner */
 
 #banner {
   background-color: lightgrey;
-}
-
-.invite {
-  padding-right:20%;
 }
 
 #banner h1 {
@@ -116,6 +108,28 @@ nav a {
   text-decoration: none;
   color: lightgrey;
   font-size: 1.5rem;
+}
+
+@media only screen and (min-width: 780px) {
+  #banner {
+    display: flex;
+    align-items: center;
+  }
+  .invite {
+    padding-right:20%;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  #banner .sixty-left, #banner .forty-right {
+    width: 100%;
+  }
+  .container-img {
+    padding: 0;
+  }
+  .invite {
+    padding: 2rem 1rem;
+  }
 }
 
 /* information */
@@ -144,6 +158,8 @@ nav a {
 }
 
 .vert-picText{
+  display: flex;
+  align-items: center;
   padding: 16px;
 }
 
