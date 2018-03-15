@@ -4,8 +4,14 @@ html {
   font-size: 16px;
 }
 
+/* h1, h3, h5, h6 {
+  color: hsl(0, 0%, 30%);
+} */
+
 body {
-  background-color: whitesmoke;
+  line-height: 1.2;
+  color: hsl(0, 0%, 30%);
+  /* background-color: whitesmoke; */
 }
 
 .sixty-left {
@@ -26,13 +32,13 @@ img, video {
   display: block;
 }
 
-@media only screen and (min-width: 780px) {
+@media only screen and (min-width: 480px) {
   #mobile {
     display: none;
   }
 }
 
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 480px) {
   #desktop {
     display: none;
   }
@@ -64,17 +70,21 @@ header img {
   text-transform: uppercase;
 }
 
+#colmar {
+  font-weight: bold;
+}
+
 #academy {
-  color: lightgrey;
+  color: hsl(0, 0%, 60%);
 }
 
 nav a {
   margin-left: 16px;
   text-decoration: none;
-  color: black;
+  color: inherit;
 }
 
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 480px) {
   header nav {
     width: 100%;
     justify-content: space-around;
@@ -84,7 +94,7 @@ nav a {
 /* banner */
 
 #banner {
-  background-color: lightgrey;
+  background-color: hsl(0, 0%, 85%);
 }
 
 #banner h1 {
@@ -100,17 +110,17 @@ nav a {
 .button {
   width: 100%;
   padding: 0.5rem 0;
-  background-color: black;
+  background-color: hsl(0, 0%, 30%);
   text-align: center;
 }
 
 .button a {
   text-decoration: none;
-  color: lightgrey;
+  color: hsl(0, 0%, 85%);
   font-size: 1.5rem;
 }
 
-@media only screen and (min-width: 780px) {
+@media only screen and (min-width: 480px) {
   #banner {
     display: flex;
     align-items: center;
@@ -120,7 +130,7 @@ nav a {
   }
 }
 
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 480px) {
   #banner .sixty-left, #banner .forty-right {
     width: 100%;
   }
@@ -130,12 +140,15 @@ nav a {
   .invite {
     padding: 2rem 1rem;
   }
+  .button {
+    background-color: hsl(0, 0%, 60%);
+  }
 }
 
 /* information */
 
 #information {
-  background-color: white;
+  background-color: hsl(0, 0%, 95%);
   display: flex;
 }
 
@@ -178,16 +191,14 @@ nav a {
 
 .text-block a {
   text-decoration: none;
-  color: blue;
+  color: hsl(212, 72%, 59%);
 }
 
 .guest {
-  background-color: lightgrey;
+  background-color: hsl(0, 0%, 85%);
 }
 
-
-
-@media only screen and (min-width: 780px) {
+@media only screen and (min-width: 480px) {
   #information .forty-right {
     border-left: 1px solid lightgrey;
     padding: 1rem 0;
@@ -197,7 +208,7 @@ nav a {
   }
 }
 
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 480px) {
   #information .forty-right, #information img, #information .text-block  {
     width: 100%;
   }
@@ -221,7 +232,7 @@ nav a {
 
 /* courses */
 #courses {
-  background-color: whitesmoke;
+  background-color: hsl(0, 0%, 90%);
   padding: 2rem 3.5rem;
 }
 
@@ -234,7 +245,7 @@ nav a {
 
 #courses h5{
   font-weight: bold;
-  font-size: 1.1rem;
+  font-size: 1.4rem;
 }
 
 #courses h6 {
@@ -242,11 +253,15 @@ nav a {
   margin: 8px 0;
 }
 
+#courses h6, #courses p {
+  color: hsl(0, 0%, 50%);
+}
+
 .blockText {
   padding: 1rem;
 }
 
-@media only screen and (min-width: 780px) {
+@media only screen and (min-width: 480px) {
 
   .picText {
     flex: 1;
@@ -264,26 +279,33 @@ nav a {
   }
 }
 
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 480px) {
   #courses, .picText, .blockText {
     padding: 0;
     margin: 0;
   }
 
-  #courses h5 {
-    display: block;
-    margin: 0.5rem 1rem;
-    padding: 1rem;
-    background: lightgrey;
+  #courses {
+    background-color: hsl(0, 0%, 95%);
   }
 
+  #courses h5 {
+    display: block;
+    margin: 0.5rem 1rem 0 1rem;
+    padding: 1.5rem 1rem;
+    background: hsl(0, 0%, 85%);
+  }
 }
 
 /* thesis */
 
 #thesis {
-  background-color: white;
+  background-color: hsl(0, 0%, 95%);
   display: flex;
+}
+
+#thesis p{
+  color: hsl(0, 0%, 45%);
 }
 
 h3#thesis {
@@ -301,7 +323,7 @@ h3#thesis {
   padding-bottom: 1.5rem;
 }
 
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 480px) {
    .sixty-left {
     width: 100%;
   }
@@ -315,7 +337,7 @@ h3#thesis {
 /* footer */
 footer {
   background-color: whitesmoke;
-  color: lightgrey;
+  color: hsl(0, 0%, 45%);
   padding: 1rem 1.5rem;
   margin-bottom: 2rem;
   display: flex;
@@ -328,13 +350,13 @@ footer a {
   color: inherit;
 }
 
-@media only screen and (min-width: 780px) {
+@media only screen and (min-width: 480px) {
   footer {
     border-top: 1px solid lightgrey;
   }
 }
 
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 480px) {
   footer {
     background-color: inherit;
     border-bottom: 0;
