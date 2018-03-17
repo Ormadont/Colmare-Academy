@@ -84,6 +84,7 @@ nav a {
   margin-left: 16px;
   text-decoration: none;
   color: inherit;
+  font-size: 20px;
 }
 
 @media only screen and (max-width: 480px) {
@@ -100,13 +101,15 @@ nav a {
 }
 
 #banner h1 {
-  font-size: 2rem;
-  font-weight: bold;
+  font-size: 2.6rem;
+  font-weight: 900;
 }
 
 #banner p {
   margin: 1.5rem 0;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 1.4;
 }
 
 .button {
@@ -118,8 +121,13 @@ nav a {
 
 .button a {
   text-decoration: none;
-  color: hsl(0, 0%, 85%);
+  color: hsl(0, 0%, 95%);
   font-size: 1.5rem;
+}
+
+.invite {
+  margin-left: 1.5rem;
+  padding-right: 25%;
 }
 
 @media only screen and (min-width: 480px) {
@@ -127,9 +135,7 @@ nav a {
     display: flex;
     align-items: center;
   }
-  .invite {
-    padding-right:20%;
-  }
+
 }
 
 @media only screen and (max-width: 480px) {
