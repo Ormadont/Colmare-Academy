@@ -92,6 +92,9 @@ nav a {
     width: 100%;
     justify-content: space-around;
   }
+  header img {
+    height: 2.5rem;
+  }
 }
 
 /* banner */
@@ -151,6 +154,18 @@ nav a {
   .button {
     background-color: hsl(0, 0%, 60%);
   }
+  #banner h1 {
+    font-size: 2.2rem;
+  }
+
+  #banner p {
+    font-size: 1.3rem;
+  }
+  .button a{
+    color: white;
+  }
+
+
 }
 
 /* information */
@@ -223,6 +238,7 @@ nav a {
   }
   #information .vert-picText {
     display: block;
+    padding-bottom: 2rem;
   }
   #information .container-sImg {
     width: auto;
@@ -231,6 +247,7 @@ nav a {
 
   #information .text-block {
     margin-top: 1rem;
+    padding-right: 0;
   }
 
   .guest {
@@ -296,6 +313,7 @@ nav a {
 
   #courses {
     background-color: hsl(0, 0%, 95%);
+    padding-bottom: 2rem;
   }
 
   #courses h5 {
@@ -303,6 +321,11 @@ nav a {
     margin: 0.5rem 1rem 0 1rem;
     padding: 1.5rem 1rem;
     background: hsl(0, 0%, 85%);
+  }
+
+  #courses h3 {
+    border-top: 1px solid hsl(0, 0%, 90%);
+    padding-top: 2rem;
   }
 }
 
@@ -346,6 +369,19 @@ h3#thesis {
     padding-left: 0;
     padding-right: 0;
   }
+
+  h3#thesis {
+    border-top: 1px solid hsl(0, 0%, 90%);
+    padding-bottom: 2rem;
+  }
+
+  .container-video {
+    padding: 0;
+  }
+
+  #thesis .container-video {
+    padding-bottom: 0;
+  }
 }
 
 /* footer */
@@ -356,6 +392,7 @@ footer {
   display: flex;
   justify-content: space-between;
   font-size: 0.9rem;
+  border-top: 1px solid hsl(0, 0%, 90%);
 }
 
 footer a {
@@ -364,14 +401,13 @@ footer a {
   color: inherit;
 }
 
-footer {
-  border-top: 1px solid hsl(0, 0%, 90%);
-}
-
 @media only screen and (max-width: 960px) {
   footer {
     background-color: inherit;
     border-bottom: 0;
     color: darkgrey;
+    border-top: 0;
+    padding: 1rem 1.5rem;
   }
+
 }
