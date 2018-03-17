@@ -2,6 +2,7 @@
 
 html {
   font-size: 16px;
+  font-family: Roboto, sans-serif;
 }
 
 /* h1, h3, h5, h6 {
@@ -42,7 +43,6 @@ img, video {
   #desktop {
     display: none;
   }
-
 }
 
 /* header */
@@ -63,11 +63,13 @@ header div, header nav {
 }
 
 header img {
-  height: 2.5rem;
+  height: 50px;
 }
 
 .logo {
   text-transform: uppercase;
+  font-size: 24px;
+  font-family: Ubuntu, sans-serif;
 }
 
 #colmar {
