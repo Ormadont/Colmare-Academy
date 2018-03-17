@@ -10,7 +10,7 @@ html {
 } */
 
 body {
-  line-height: 1.2;
+  line-height: 1.4;
   color: hsl(0, 0%, 30%);
   /* background-color: whitesmoke; */
 }
@@ -24,7 +24,7 @@ body {
 }
 
 .container-img, .container-video {
-  padding: 32px 24px;
+  padding: 2rem 1.5rem;
 }
 
 img, video {
@@ -33,13 +33,13 @@ img, video {
   display: block;
 }
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 960px) {
   #mobile {
     display: none;
   }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 960px) {
   #desktop {
     display: none;
   }
@@ -81,13 +81,13 @@ header img {
 }
 
 nav a {
-  margin-left: 16px;
+  margin-left: 1rem;
   text-decoration: none;
   color: inherit;
-  font-size: 20px;
+  font-size: 1.2rem;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 960px) {
   header nav {
     width: 100%;
     justify-content: space-around;
@@ -130,7 +130,7 @@ nav a {
   padding-right: 25%;
 }
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 960px) {
   #banner {
     display: flex;
     align-items: center;
@@ -138,7 +138,7 @@ nav a {
 
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 960px) {
   #banner .sixty-left, #banner .forty-right {
     width: 100%;
   }
@@ -165,8 +165,8 @@ nav a {
 }
 
 .inf-mainText h3 {
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-size: 2.2rem;
+  font-weight: 900;
 }
 
 .inf-mainText .quote {
@@ -186,6 +186,7 @@ nav a {
 
 .text-block {
   width: 65%;
+  padding-right: 8%;
 }
 
 .text-block h5{
@@ -206,7 +207,7 @@ nav a {
   background-color: hsl(0, 0%, 85%);
 }
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 960px) {
   #information .forty-right {
     border-left: 1px solid lightgrey;
     padding: 1rem 0;
@@ -216,7 +217,7 @@ nav a {
   }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 960px) {
   #information .forty-right, #information img, #information .text-block  {
     width: 100%;
   }
@@ -246,8 +247,8 @@ nav a {
 
 #courses h3 {
   text-align: center;
-  font-size: 2rem;
-  font-weight: bold;
+  font-size: 2.2rem;
+  font-weight: 900;
   padding-bottom: 2rem;
 }
 
@@ -269,7 +270,7 @@ nav a {
   padding: 1rem;
 }
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 960px) {
 
   .picText {
     flex: 1;
@@ -287,7 +288,7 @@ nav a {
   }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 960px) {
   #courses, .picText, .blockText {
     padding: 0;
     margin: 0;
@@ -317,10 +318,15 @@ nav a {
 }
 
 h3#thesis {
-  font-weight: bold;
-  font-size: 2rem;
+  font-weight: 900;
+  font-size: 2.2rem;
   justify-content: center;
   padding-top: 2rem;
+}
+
+#thesis h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 #thesis .forty-right {
@@ -331,7 +337,7 @@ h3#thesis {
   padding-bottom: 1.5rem;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 960px) {
    .sixty-left {
     width: 100%;
   }
@@ -349,6 +355,7 @@ footer {
   padding: 1rem 1.5rem 4rem 1.5rem;
   display: flex;
   justify-content: space-between;
+  font-size: 0.9rem;
 }
 
 footer a {
@@ -357,13 +364,11 @@ footer a {
   color: inherit;
 }
 
-@media only screen and (min-width: 480px) {
-  footer {
-    border-top: 1px solid lightgrey;
-  }
+footer {
+  border-top: 1px solid hsl(0, 0%, 90%);
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 960px) {
   footer {
     background-color: inherit;
     border-bottom: 0;
